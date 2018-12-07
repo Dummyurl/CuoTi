@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.chinastis.cuoti.view.SaveActivity">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="题干"
+                android:textColor="@color/text_regular"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="3dp"
+                android:id="@+id/ques_image_list"
+                android:layout_width="match_parent"
+                android:layout_height="106dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="答案/原图"
+                android:textColor="@color/text_regular"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="3dp"
+                android:id="@+id/ans_image_list"
+                android:layout_width="match_parent"
+                android:layout_height="106dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="选择学科"
+                android:textColor="@color/text_regular"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/class_list_save"
+                android:layout_width="match_parent"
+                android:layout_height="98dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="掌握程度"
+                android:textColor="@color/text_regular"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/understand_list_save"
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="错题来源"
+                android:textColor="@color/text_regular"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ques_from_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_gray_edit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="备注（选填）"
+                android:textColor="@color/text_regular"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tip_edit"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_gray_edit" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="保存"
+        android:id="@+id/save_button"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

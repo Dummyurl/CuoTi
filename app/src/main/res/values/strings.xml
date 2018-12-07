@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">错题本</string>
+
+
+    <string name="back">返回</string>
+
+    <!--login-->
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+    <string name="account_hint">请输入帐号</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="confirm">确认</string>
+    <string name="login">登录</string>
+    <string name="cancel">取消</string>
+    <string name="register">注册</string>
+    <string name="forget">忘记密码</string>
+    <string name="name">姓名</string>
+
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+
+    <string-array name="classes">
+        <item>语文</item>
+        <item>数学</item>
+        <item>英语</item>
+        <item>政治</item>
+        <item>历史</item>
+        <item>地理</item>
+        <item>生物</item>
+        <item>物理</item>
+        <item>化学</item>
+    </string-array>
+</resources>

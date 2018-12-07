@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cf3b3d</color>
+    <color name="colorPrimaryDark">#8e2622</color>
+    <color name="colorAccent">#3ba933</color>
+    <color name="colorWhite">#FFffffff</color>
+    <color name="black">#FF000000</color>
+
+    <color name="login">#fa3c3c</color>
+
+    <color name="splash">#1d3750</color>
+
+    <color name="button_up">#cf3b3d</color>
+
+    <color name="page_background">#f4f5f7</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#868686</color>
+    <color name="deep_gray">#595959</color>
+    <color name="red">#c10000</color>
+    <color name="red_bright">#f52e2e</color>
+    <color name="blue">#3597ff</color>
+
+    <color name="light_gray">#a4a4a4</color>
+    <color name="lighter_gray">#dedede</color>
+    <color name="lighter_er_gray">#ededed</color>
+
+    <color name="click_text">#4bc4ff</color>
+    <color name="bot_bar_text">#ff318cde</color>
+    <color name="text_regular">#2e2e2e</color>
+
+    <color name="color_light_purple">#cabad4</color>
+    <color name="color_task_title">#dca4ff</color>
+
+    <color name="color_loc_bac">#6e030303</color>
+    <color name="color_lock_layout">#96d6d6d6</color>
+</resources>

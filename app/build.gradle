@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.chinastis.cuoti"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "ee0cffea01d76ef41c9b9306", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.chinastis.cuoti.database.dao'
+        targetGenDir 'src/main/java'
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/httpmime-4.1.2.jar')
+
+    // 此处以JPush 3.1.5 版本为例。
+    // 此处以JCore 1.2.3 版本为例。
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'org.greenrobot:greendao:3.1.0'
+    compile 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.0.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.edmodo:cropper:1.0.1'
+    compile 'cn.jiguang.sdk:jpush:3.1.5'
+    compile 'cn.jiguang.sdk:jcore:1.2.3'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+}

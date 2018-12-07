@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chinastis.cuoti.view.ProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <include layout="@layout/line_setting"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="手机"
+            android:textSize="16sp" />
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/mobile_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/line_setting"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="电话"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/phone_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <include layout="@layout/line_setting"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="qq"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/qq_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <include layout="@layout/line_setting"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="邮箱"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/mail_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <include layout="@layout/line_setting"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="学校"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/school_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <include layout="@layout/line_setting"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="年级"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/grade_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <include layout="@layout/line_setting"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="班级"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/class_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <include layout="@layout/line_setting"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="学年"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/year_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:lines="1"
+            android:background="@drawable/bac_edit_login"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <include layout="@layout/line_setting"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:id="@+id/confirm_profile"
+        android:text="确定"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+</LinearLayout>

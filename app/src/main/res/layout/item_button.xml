@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button_item"
+        android:layout_margin="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/deep_gray"
+        android:background="@drawable/bac_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</LinearLayout>

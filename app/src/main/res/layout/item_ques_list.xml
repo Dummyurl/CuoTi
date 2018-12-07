@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/shape_understand_text"
+            android:id="@+id/understand_ques_item"
+            android:layout_width="66dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/review_ques_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:layout_gravity="end"
+            android:visibility="invisible"
+            android:layout_marginRight="15dp"
+            android:id="@+id/check_ques_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_ques_item"
+        android:layout_margin="7dp"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+</LinearLayout>
